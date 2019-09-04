@@ -1,0 +1,24 @@
+ext {
+    //false:组件模式
+    //true：集成模式
+    isModule = true
+    android = [
+            compileSdkVersion:26,
+            minSdkVersion    :14,
+            targetSdkVersion :26,
+            versionCode      :1,
+            versionName      :"1.0"
+    ]
+
+    appId = [
+            "app" : "com.ck.dnrouter",
+            "module1": "com.ck.module1",
+            "module2": "com.ck.module2"
+    ]
+
+    supportLibrary = "26.1.0"
+    dependencies = [
+            "appcompat-v7" : "com.android.support:appcompat-v7:${supportLibrary}",
+    ]
+
+}
